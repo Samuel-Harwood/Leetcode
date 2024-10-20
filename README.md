@@ -1,2 +1,2 @@
 # Leetcode
-All my leetcode problems
+All solved leetcode problems synced to github using Leetsync
