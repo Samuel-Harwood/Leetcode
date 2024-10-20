@@ -1,10 +1,11 @@
 class Solution(object):
     def twoSum(self, nums, target):
-        map = {}
-        for i, n in enumerate(nums):
-            diff = target - n
-            if diff in map:
-                return [i, map[diff]]
-            map[n] = i
-        
-        
+        seen = {}
+        for i, value in enumerate(nums):
+            remaining = target - nums[i]
+            if remaining in seen:
+                return [seen[remaining], i]
+            else:
+                seen[value] = i
+      
+    
